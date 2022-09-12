@@ -1,11 +1,7 @@
-from datetime import datetime, timedelta
+import datetime
+date_entry = input('')
+year, month, day = map(int, date_entry.split('-'))
+date1 = datetime.date(year, month, day)
+NextDay_Date = date1  + datetime.timedelta(days=1)
+print ("Next Date:",NextDay_Date)
 
-year=int(input("year"))
-month=int(input("month"))
-day=int(input("day"))
-
-date=datetime(year,month,day,    )
-print(date)
-#for i in range(5): 
- #   date += datetime.timedelta(day=1)
-   #print(date) 
